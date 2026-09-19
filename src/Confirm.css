@@ -1,0 +1,93 @@
+.confirm-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 20px;
+
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.confirm-card {
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px;
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  animation: scaleIn 0.4s ease forwards;
+}
+
+.confirm-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  background: #e8f8ee;
+  color: #28a745;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+
+  animation: iconPop 0.5s ease 0.2s both;
+}
+
+.confirm-card h1 {
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 30px;
+}
+
+.confirm-card p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Background fade */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Card appears from small to normal */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Check icon animation */
+@keyframes iconPop {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  70% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
